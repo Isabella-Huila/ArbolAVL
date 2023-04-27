@@ -1,21 +1,12 @@
-public class NodoArbolAVL {
-
-
-    int dato;
+public class NodoArbolAVL<T> {
+    T data;
     int fe;
+    NodoArbolAVL<T> hijoIzquierdo, hijoDerecho;
 
-    NodoArbolAVL hijoIzquierdo,hijoDerecho;
-
-    public NodoArbolAVL(int d) {
-        this.dato = d;
+    public NodoArbolAVL(T data) {
+        this.data = data;
         this.fe = 0;
-        this.hijoIzquierdo = null;
         this.hijoDerecho = null;
-
-
-
-
+        this.hijoIzquierdo = null;
     }
-
-
 }
